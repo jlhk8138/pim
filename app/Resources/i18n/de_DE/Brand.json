@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "isActive": "Aktiv",
+    "products": "Produkte",
+    "code": "Code"
+  },
+  "links": {
+    "createdBy": "erstellt von",
+    "modifiedBy": "geändert von",
+    "products": "Produkte"
+  },
+  "labels": {
+    "Create Brand": "Marke erstellen"
+  },
+  "exceptions": {
+    "brandIsUsedInProducts": "Die Marke wird in den Produkten verwendet. Bitte aktualisieren Sie zuerst die Produkte.",
+    "brandWithSuchCodeAlreadyExist": "Die Marke mit einem solchen Code existiert bereits."
+  }
+}

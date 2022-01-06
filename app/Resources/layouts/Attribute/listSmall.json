@@ -1,0 +1,21 @@
+[
+  {
+    "name": "name",
+    "link": true
+  },
+  {
+    "name": "code"
+  },
+  {
+    "name": "attributeGroup"
+  },
+  {
+    "name": "attributeTab"
+  },
+  {
+    "name": "type"
+  },
+  {
+    "name": "isMultilang"
+  }
+]

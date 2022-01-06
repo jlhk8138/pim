@@ -1,0 +1,4 @@
+mkdir .platform/
+touch .platform/routes.yaml
+touch .platform/services.yaml
+touch .platform.app.yaml

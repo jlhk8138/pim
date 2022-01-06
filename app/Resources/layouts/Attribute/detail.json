@@ -1,0 +1,70 @@
+[
+  {
+    "label": "Overview",
+    "style": "default",
+    "rows": [
+      [
+        {
+          "name": "type"
+        },
+        {
+          "name": "assetType"
+        }
+      ],
+      [
+        {
+          "name": "name"
+        },
+        false
+      ],
+      [
+        {
+          "name": "code"
+        },
+        {
+          "name": "unique"
+        }
+      ],
+      [
+        {
+          "name": "attributeGroup"
+        },
+        {
+          "name": "attributeTab"
+        }
+      ],
+      [
+        {
+          "name": "pattern"
+        },
+        false
+      ],
+      [
+        {
+          "name": "isSorted"
+        },
+        false
+      ],
+      [
+        {
+          "name": "prohibitedEmptyValue"
+        },
+        false
+      ],
+      [
+        {
+          "name": "enumDefault"
+        },
+        false
+      ],
+      [
+        {
+          "name": "measure"
+        },
+        {
+          "name": "unitDefault"
+        }
+      ]
+    ]
+  }
+]

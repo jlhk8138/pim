@@ -1,0 +1,21 @@
+{
+  "fields": {
+    "tags": "Tags",
+    "name": "Titel",
+    "status": "Status",
+    "type": "Typ",
+    "description": "Beschreibung",
+    "text": "Text",
+    "metaTitle": "Meta Title",
+    "metaDescription": "Meta Description",
+    "contentGroup": "Content Gruppe",
+    "products": "Produkte"
+  },
+  "links": {
+    "contentGroup": "Content Gruppe",
+    "products": "Produkte"
+  },
+  "labels": {
+    "Create Content": "Сontent erstellen"
+  }
+}

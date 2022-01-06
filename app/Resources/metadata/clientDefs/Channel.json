@@ -1,0 +1,77 @@
+{
+  "confirm": {
+    "categoryId": "Channel.messages.categoryChangeConfirm"
+  },
+  "controller": "controllers/record",
+  "iconClass": "fas fa-share-square",
+  "boolFilterList": [
+    "onlyMy",
+    "notLinkedWithProduct",
+    "notEntity",
+    "linkedWithProduct",
+    "linkedWithCategory",
+    "notLinkedWithCategory",
+    "notLinkedWithAttributesInProduct",
+    "notLinkedWithAttributesInProductFamily",
+    "notLinkedWithCategoriesInProduct",
+    "productChannels",
+    "notLinkedWithProductFamilyAttribute",
+    "notLinkedWithProductAttributeValue"
+  ],
+  "hiddenBoolFilterList": [
+    "notLinkedWithProduct",
+    "notEntity",
+    "linkedWithProduct",
+    "linkedWithCategory",
+    "notLinkedWithCategory",
+    "notLinkedWithAttributesInProduct",
+    "notLinkedWithAttributesInProductFamily",
+    "notLinkedWithCategoriesInProduct",
+    "productChannels",
+    "notLinkedWithProductFamilyAttribute",
+    "notLinkedWithProductAttributeValue"
+  ],
+  "disabledMassActions": [
+    "merge"
+  ],
+  "views": {
+    "detail": "pim:views/detail",
+    "list": "pim:views/list"
+  },
+  "modalViews": {
+    "edit": "pim:views/channel/modals/edit"
+  },
+  "recordViews": {
+    "detail": "pim:views/channel/record/detail",
+    "list": "pim:views/record/list"
+  },
+  "relationshipPanels": {
+    "products": {
+      "layout": "listForProductsInChannel"
+    }
+  },
+  "dynamicLogic": {
+    "fields": {
+      "locales": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isTrue",
+              "attribute": "hasLocales"
+            }
+          ]
+        }
+      },
+      "isActiveForChannel": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "isActiveForChannel"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

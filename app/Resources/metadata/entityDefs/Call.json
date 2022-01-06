@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "parent": {
+      "type": "linkParent",
+      "entityList": ["Account", "Contact", "Opportunity", "Case", "Product"]
+    }
+  }
+}

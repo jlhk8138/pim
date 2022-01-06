@@ -1,0 +1,44 @@
+{
+  "fields": {
+    "name": "Name",
+    "description": "Description",
+    "code": "Code",
+    "isActive": "Active",
+    "assets": "Assets",
+    "categoryParent": "Parent Category",
+    "categories": "Categories",
+    "channels": "Channels",
+    "image": "Main Image",
+    "categoryRouteName": "Сategory Tree",
+    "scope": "Scope",
+    "productCategories": "Category Products",
+    "catalogs": "Catalogs"
+  },
+  "links": {
+    "categoryParent": "Parent Category",
+    "categories": "Child Categories",
+    "assets": "Assets",
+    "channels": "Channels",
+    "catalogs": "Catalogs",
+    "productCategories": "Category Products"
+  },
+  "labels": {
+    "withoutCatalog": "Without Catalog",
+    "Create Category": "Create Category"
+  },
+  "messages": {
+    "channelUnlinkConfirm": "Are you sure you want to unlink the channel from the category tree, all the products linked indirectly via category tree with the channel will be unlinked too?",
+    "categoryRemoveConfirm": "Are you sure you want to remove the category? All subcategories of this category will be also removed and all products linked to this category or its subcategories will be unlinked.",
+    "categoryCatalogUnlinkConfirm": "Are you sure you want to unlink the category tree from the catalog? All products will be unlinked from the categories of this tree.",
+    "categoryParentChangeConfirm": "Please consider, that the updated category tree will be additionally assigned to the same catalogs as the original category tree. The products will be unlinked from all the channels inherited from the original category tree and linked will the channels inherited from the updated category tree."
+  },
+  "exceptions": {
+    "categoryHasChildren": "Selected category used by another category as parent and can not be selected as product category.",
+    "categoryHasChildCategoryAndCantBeDeleted": "Category has child category and can't be deleted.",
+    "youCanNotChooseChildCategory": "You can not choose a child category.",
+    "categoryHasProducts": "Category with related products can't be deleted.",
+    "categoryCannotBeUnRelatedFromCatalog": "Category tree with linked products can't be unlinked from catalog.",
+    "parentCategoryHasProducts": "This category cannot be set as a parent category, it is a leaf-category with assigned products.",
+    "youCanNotChangeParentCategoryInRootCategoryWithLinkedProducts": "You can not change parent category in root category with linked products."
+  }
+}

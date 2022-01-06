@@ -1,0 +1,69 @@
+{
+  "confirm": {
+    "categoryParentId": "Category.messages.categoryParentChangeConfirm"
+  },
+  "controller": "pim:controllers/record-tree",
+  "iconClass": "fas fa-th",
+  "boolFilterList": [
+    "onlyMy",
+    "notEntity",
+    "notLinkedWithProduct",
+    "linkedWithCatalog",
+    "onlyRootCategory",
+    "onlyCatalogCategories",
+    "onlyLeafCategories"
+  ],
+  "hiddenBoolFilterList": [
+    "notEntity",
+    "notLinkedWithProduct",
+    "linkedWithCatalog",
+    "onlyRootCategory",
+    "onlyCatalogCategories",
+    "onlyLeafCategories"
+  ],
+  "disabledMassActions": [
+    "merge"
+  ],
+  "views": {
+    "list": "pim:views/category/list",
+    "detail": "pim:views/category/detail"
+  },
+  "recordViews": {
+    "list": "pim:views/category/record/list",
+    "detail": "pim:views/category/record/detail"
+  },
+  "relationshipPanels": {
+    "catalogs": {
+      "selectAction": "selectRelatedEntity",
+      "selectBoolFilterList": [
+        "notEntity"
+      ],
+      "view": "pim:views/category/record/panels/catalogs",
+      "rowActionsView": "pim:views/category/record/row-actions/catalogs"
+    },
+    "channels": {
+      "unlinkConfirm": "Category.messages.channelUnlinkConfirm",
+      "selectAction": "selectRelatedEntity",
+      "selectBoolFilterList": [
+        "notEntity"
+      ],
+      "view": "pim:views/category/record/panels/channels",
+      "rowActionsView": "pim:views/category/record/row-actions/channels"
+    },
+    "products": {
+      "create": false,
+      "selectAction": "selectRelatedEntity",
+      "selectBoolFilterList": [
+        "notEntity",
+        "onlyCategoryCatalogsProducts"
+      ],
+      "dragDrop": {
+        "isActive": true,
+        "sortField": "pcSorting"
+      },
+      "sortBy": "pcSorting",
+      "asc": true,
+      "view": "pim:views/category/record/panels/products"
+    }
+  }
+}

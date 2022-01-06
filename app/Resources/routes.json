@@ -1,0 +1,35 @@
+[
+  {
+    "route": "Dashlet/:dashletName",
+    "method": "get",
+    "params": {
+      "controller": "Dashlet",
+      "action": "GetDashlet",
+      "dashletName": ":dashletName"
+    }
+  },
+  {
+    "route": "/Product/associatedMainProducts/relation",
+    "method": "post",
+    "params": {
+      "controller": "Product",
+      "action": "addAssociatedProducts"
+    }
+  },
+  {
+    "route": "/Product/associatedMainProducts/relation",
+    "method": "delete",
+    "params": {
+      "controller": "Product",
+      "action": "removeAssociatedProducts"
+    }
+  },
+  {
+    "route": "/Attribute/action/getAttributesIdsFilter",
+    "method": "get",
+    "params": {
+      "controller": "Attribute",
+      "action": "getAttributesIdsFilter"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Category settings",
+    "rows": [
+      [
+        {
+          "name": "productCanLinkedWithNonLeafCategories"
+        },
+        false
+      ],
+      [
+        {
+          "name": "behaviorOnCatalogChange"
+        },
+        {
+          "name": "behaviorOnCategoryDelete"
+        }
+      ],
+      [
+        {
+          "name": "behaviorOnCategoryTreeUnlinkFromCatalog"
+        },
+        false
+      ]
+    ]
+  },
+  {
+    "label": "productSettings",
+    "rows": [
+      [
+        {
+          "name": "behaviorOnProductFamilyChange"
+        },
+        false
+      ]
+    ]
+  }
+]

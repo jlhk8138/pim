@@ -1,0 +1,13 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "code"
+    },
+    {
+        "name": "isActiveForChannel",
+        "notSortable": true
+    }
+]

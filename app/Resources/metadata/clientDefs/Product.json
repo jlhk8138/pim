@@ -1,0 +1,159 @@
+{
+  "controller": "pim:controllers/product",
+  "iconClass": "fas fa-box-open",
+  "quickCreate": true,
+  "navigateToEntityAfterQuickCreate": true,
+  "quickCreateOptions": {
+    "fullFormDisabled": true
+  },
+  "treeScopes": [
+    "Category"
+  ],
+  "boolFilterList": [
+    "onlyMy",
+    "ownedByMe",
+    "assignedToMe",
+    "notEntity",
+    "notAssociatedProducts",
+    "onlySimple",
+    "onlyCategoryCatalogsProducts",
+    "notLinkedWithChannel",
+    "notLinkedWithBrand",
+    "notLinkedWithProductFamily",
+    "notLinkedWithPackaging",
+    "withoutAssociatedProducts",
+    "withoutAnyCategory",
+    "withoutProductAttributes",
+    "notLinkedWithProductSerie",
+    "onlyCatalogProducts",
+    "linkedWithCategory",
+    "linkedWithProductFamily",
+    "activeForChannel"
+  ],
+  "hiddenBoolFilterList": [
+    "notEntity",
+    "notAssociatedProducts",
+    "onlySimple",
+    "onlyCategoryCatalogsProducts",
+    "notLinkedWithChannel",
+    "notLinkedWithBrand",
+    "notLinkedWithProductFamily",
+    "notLinkedWithPackaging",
+    "notLinkedWithProductSerie",
+    "onlyCatalogProducts",
+    "linkedWithCategory",
+    "linkedWithProductFamily",
+    "activeForChannel"
+  ],
+  "disabledMassActions": [
+    "merge"
+  ],
+  "views": {
+    "list": "pim:views/product/list",
+    "detail": "pim:views/product/detail",
+    "plate": "pim:views/product/plate"
+  },
+  "recordViews": {
+    "list": "pim:views/product/record/list",
+    "detail": "pim:views/product/record/detail",
+    "search": "pim:views/product/record/search",
+    "plate": "pim:views/product/record/plate",
+    "plateItem": "pim:views/product/record/plate-item"
+  },
+  "modalViews": {
+    "edit": "pim:views/product/modals/edit"
+  },
+  "massRelationView": "pim:views/product/modals/select-entity-and-records",
+  "relationshipPanels": {
+    "productAttributeValues": {
+      "createAction": "createRelatedConfigured",
+      "selectAction": "selectRelatedEntity",
+      "selectBoolFilterList": [
+        "notLinkedProductAttributeValues",
+        "fromAttributesTab"
+      ],
+      "tabId": null,
+      "rowActionsView": "pim:views/product-attribute-value/record/row-actions/relationship-no-unlink-in-product",
+      "view": "pim:views/product/record/panels/product-attribute-values",
+      "recordListView": "pim:views/product-attribute-value/record/list-in-product",
+      "aclScopesList": [
+        "Attribute",
+        "AttributeGroup",
+        "ProductAttributeValue"
+      ],
+      "sortBy": "attribute.sortOrder",
+      "asc": true
+    },
+    "channels": {
+      "selectBoolFilterList": [
+        "notLinkedWithProduct"
+      ],
+      "rowActionsView": "pim:views/product/record/row-actions/product-channels",
+      "createAction": "createRelatedConfigured",
+      "selectAction": "selectRelatedEntity",
+      "layout": "listForChannelsInProduct"
+    },
+    "categories": {
+      "create": false,
+      "selectAction": "selectRelatedEntity",
+      "selectBoolFilterList": [
+        "notEntity",
+        "onlyCatalogCategories",
+        "onlyLeafCategories"
+      ],
+      "view": "pim:views/product/record/panels/categories"
+    },
+    "associatedMainProducts": {
+      "view": "pim:views/product/record/panels/associated-main-product",
+      "label": "associatedProducts",
+      "rowActionsView": "pim:views/associated-product/record/row-actions/edit-and-remove-in-product",
+      "select": false,
+      "aclScopesList": [
+        "Association"
+      ]
+    }
+  },
+  "dynamicLogic": {
+    "fields": {
+      "type": {
+        "readOnly": {
+          "conditionGroup": [
+            {
+              "type": "or",
+              "value": [
+                {
+                  "type": "isNotEmpty",
+                  "attribute": "id"
+                },
+                {
+                  "type": "isNotEmpty",
+                  "attribute": "_duplicatingEntityId"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "isActiveForChannel": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "isActiveForChannel"
+            }
+          ]
+        }
+      },
+      "pcSorting": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "pcSorting"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

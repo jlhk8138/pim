@@ -1,0 +1,53 @@
+{
+  "fields": {
+    "productCanLinkedWithNonLeafCategories": {
+      "type": "bool",
+      "tooltip": true
+    },
+    "behaviorOnCatalogChange": {
+      "type": "enum",
+      "tooltip": true,
+      "required": true,
+      "options": [
+        "cascade",
+        "restrict"
+      ],
+      "optionsIds": [
+        "cascade",
+        "restrict"
+      ],
+      "default": "cascade"
+    },
+    "behaviorOnCategoryDelete": {
+      "type": "enum",
+      "tooltip": true,
+      "required": true,
+      "options": [
+        "cascade",
+        "restrict"
+      ],
+      "default": "cascade"
+    },
+    "behaviorOnCategoryTreeUnlinkFromCatalog": {
+      "type": "enum",
+      "tooltip": true,
+      "required": true,
+      "options": [
+        "cascade",
+        "restrict"
+      ],
+      "default": "cascade"
+    },
+    "behaviorOnProductFamilyChange": {
+      "type": "enum",
+      "tooltip": false,
+      "required": true,
+      "options": [
+        "retainAllInheritedAttributes",
+        "removeAllInheritedAttributes",
+        "removeOnlyInheritedAttributesWithNoValue"
+      ],
+      "default": "retainAllInheritedAttributes"
+    }
+  }
+}

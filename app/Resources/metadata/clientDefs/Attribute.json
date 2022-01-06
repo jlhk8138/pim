@@ -1,0 +1,182 @@
+{
+  "controller": "controllers/record",
+  "iconClass": "fas fa-sort-amount-down",
+  "boolFilterList": [
+    "onlyMy",
+    "notLinkedWithProduct",
+    "notLinkedProductAttributeValues",
+    "fromAttributesTab",
+    "notLinkedProductFamilyAttributes",
+    "unitTypeDisabled",
+    "notLinkedWithProductFamilyAttribute",
+    "notLinkedWithProductAttributeValue"
+  ],
+  "hiddenBoolFilterList": [
+    "notLinkedWithProduct",
+    "notLinkedProductAttributeValues",
+    "fromAttributesTab",
+    "notLinkedProductFamilyAttributes",
+    "unitTypeDisabled",
+    "notLinkedWithProductFamilyAttribute",
+    "notLinkedWithProductAttributeValue"
+  ],
+  "disabledMassActions": [
+    "merge"
+  ],
+  "views": {
+    "list": "pim:views/list",
+    "detail": "pim:views/attribute/detail"
+  },
+  "recordViews": {
+    "detail": "pim:views/attribute/record/detail",
+    "editSmall": "pim:views/attribute/record/edit-small",
+    "list": "pim:views/attribute/record/list"
+  },
+  "modalViews": {
+    "select": "pim:views/attribute/modals/select-records"
+  },
+  "dynamicLogic": {
+    "fields": {
+      "type": {
+        "readOnly": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "id"
+            }
+          ]
+        }
+      },
+      "assetType": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "equals",
+              "attribute": "type",
+              "value": "asset"
+            }
+          ]
+        },
+        "required": {
+          "conditionGroup": [
+            {
+              "type": "equals",
+              "attribute": "type",
+              "value": "asset"
+            }
+          ]
+        }
+      },
+      "pattern": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "equals",
+              "attribute": "type",
+              "value": "varchar"
+            }
+          ]
+        }
+      },
+      "unique": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "in",
+              "attribute": "type",
+              "value": [
+                "asset",
+                "currency",
+                "date",
+                "datetime",
+                "float",
+                "int",
+                "unit",
+                "url",
+                "varchar"
+              ]
+            }
+          ]
+        }
+      },
+      "isSorted": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "in",
+              "attribute": "type",
+              "value": [
+                "enum",
+                "multiEnum"
+              ]
+            }
+          ]
+        }
+      },
+      "prohibitedEmptyValue": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "in",
+              "attribute": "type",
+              "value": [
+                "enum",
+                "unit"
+              ]
+            }
+          ]
+        }
+      },
+      "enumDefault": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "in",
+              "attribute": "type",
+              "value": [
+                "enum"
+              ]
+            }
+          ]
+        }
+      },
+      "measure": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "in",
+              "attribute": "type",
+              "value": [
+                "unit"
+              ]
+            }
+          ]
+        },
+        "required": {
+          "conditionGroup": [
+            {
+              "type": "in",
+              "attribute": "type",
+              "value": [
+                "unit"
+              ]
+            }
+          ]
+        }
+      },
+      "unitDefault": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "in",
+              "attribute": "type",
+              "value": [
+                "unit"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

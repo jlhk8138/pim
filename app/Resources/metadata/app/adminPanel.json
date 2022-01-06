@@ -1,0 +1,13 @@
+{
+  "pim": {
+    "label": "pim",
+    "itemList": [
+      {
+        "url": "#Admin/moduleSettings/id=pim:views_settings_edit",
+        "label": "pimSettings",
+        "description": "pimSettings"
+      }
+    ],
+    "order": 60
+  }
+}

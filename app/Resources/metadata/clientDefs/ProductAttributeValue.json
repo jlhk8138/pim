@@ -1,0 +1,98 @@
+{
+  "controller": "controllers/record",
+  "boolFilterList": [
+    "onlyMy"
+  ],
+  "disabledMassActions": [
+    "merge"
+  ],
+  "modalViews": {
+    "detail": "pim:views/product-attribute-value/modals/detail",
+    "edit": "pim:views/product-attribute-value/modals/edit"
+  },
+  "recordViews": {
+    "detail": "pim:views/product-attribute-value/record/detail",
+    "edit": "pim:views/product-attribute-value/record/edit",
+    "detailSmall": "pim:views/product-attribute-value/record/detail-small",
+    "editSmall": "pim:views/product-attribute-value/record/edit-small",
+    "list": "pim:views/product-attribute-value/record/list"
+  },
+  "dynamicLogic": {
+    "fields": {
+      "channel": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "equals",
+              "attribute": "scope",
+              "value": "Channel"
+            },
+            {
+              "type": "isNotEmpty",
+              "attribute": "attributeId"
+            }
+          ]
+        },
+        "required": {
+          "conditionGroup": [
+            {
+              "type": "equals",
+              "attribute": "scope",
+              "value": "Channel"
+            },
+            {
+              "type": "isNotEmpty",
+              "attribute": "attributeId"
+            }
+          ]
+        },
+        "readOnly": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "id"
+            }
+          ]
+        }
+      },
+      "value": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "id"
+            }
+          ]
+        }
+      },
+      "scope": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "attributeId"
+            }
+          ]
+        },
+        "readOnly": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "id"
+            }
+          ]
+        }
+      },
+      "attribute": {
+        "readOnly": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "id"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "scopeNames": {
+    "AttributeTab": "Attributtab",
+    "ProductPrice": "Produktpreis",
+    "ChannelPricing": "Kanal Pricing",
+    "AssetCategory": "Asset Kategorie",
+    "Catalog": "Kataloge",
+    "Product": "Produkt",
+    "ProductFamily": "Produktfamilie",
+    "ProductSerie": "Produktserie",
+    "AttributeGroup": "Attributgruppe",
+    "AssociatedProduct": "Assoziiertes Produkt",
+    "Attribute": "Attribut",
+    "ProductAttributeValue": "Produktattributwert",
+    "Category": "Kategorie",
+    "Packaging": "Verpackung",
+    "Channel": "Kanal",
+    "Association": "Assoziation",
+    "Brand": "Marke",
+    "Tax": "Tax",
+    "Settings": "Administration",
+    "Currency": "Währung",
+    "ProductFamilyAttribute": "Produktfamilie Attribute",
+    "Content": "Content",
+    "ContentGroup": "Content Gruppe"
+  },
+  "scopeNamesPlural": {
+    "AttributeTab": "Attributtabs",
+    "ProductPrice": "Produktpreise",
+    "AssetCategory": "Asset Kategorien",
+    "Catalog": "Kataloge",
+    "Product": "Produkte",
+    "ProductFamily": "Produktfamilien",
+    "AssociatedProduct": "Assoziierte Produkte",
+    "ProductSerie": "Produktserien",
+    "Attribute": "Attribute",
+    "ProductAttributeValue": "Produktattributwert",
+    "Category": "Kategorien",
+    "Packaging": "Verpackungen",
+    "Channel": "Kanäle",
+    "Association": "Assoziationen",
+    "Brand": "Marken",
+    "AttributeGroup": "Attribut-Gruppen",
+    "Tax": "Steuern",
+    "Settings": "Administration",
+    "ActionHistoryRecord": "Aktionsgeschichte",
+    "Currency": "Währung",
+    "Dashboard": "Instrumententafel",
+    "EmailAddress": "E-Mail Addresse",
+    "ProductFamilyAttribute": "Produktfamilie Attribute",
+    "Content": "Contents",
+    "ContentGroup": "Content Gruppen"
+  },
+  "fields": {
+    "channels": "Kanäle",
+    "productFamily": "Artikel-Familien",
+    "productSerie": "Product Serie",
+    "scope": "Scope",
+    "role": "Rolle"
+  },
+  "options": {
+    "searchRanges": {
+      "isNot": "Ist kein",
+      "isNotOneOf": "Ist kein von",
+      "noneOf": "Ist kein von"
+    },
+    "varcharSearchRanges": {
+      "equals": "Gleich",
+      "like": "Teilsuche (%)",
+      "notLike": "Ist nicht wie (%)",
+      "startsWith": "Beginnt mit",
+      "endsWith": "Endet mit",
+      "contains": "Enthält",
+      "notContains": "Nicht Enthält",
+      "isEmpty": "Ist leer",
+      "isNotEmpty": "Ist nicht leer",
+      "notEquals": "Nicht gleich"
+    },
+    "channelsFilter": {
+      "": "Alle Scopes",
+      "onlyGlobalScope": "Nur Global"
+    },
+    "scope": {
+      "Global": "Global",
+      "Channel": "Kanal"
+    }
+  },
+  "labels": {
+    "productSettings": "Produkteinstellungen",
+    "Reset selection": "Auswahl zurücksetzen",
+    "typeToSearch": "Tippe um zu suchen...",
+    "useDragAndDrop": "Per Drag & Drop neu anordnen",
+    "categorySettings": "Kategorieeinstellungen",
+    "cascade": "Erweitern",
+    "restrict": "Einschränken",
+    "Add Field": "Filter hinzufügen",
+    "removeExplain": "Checkbox abhacken, um Attribute von anderen Entities vor dem Löschen loszubinden",
+    "Add Group": "Gruppe hinzufügen",
+    "Expand": "Erweitern",
+    "Manage Categories": "Kategorien verwalten",
+    "Manage Folders": "Ordner verwalten",
+    "New notifications": "Neue Benachrichtigungen",
+    "Return to Application": "Zurück zur Anwendung",
+    "you": "sie",
+    "removeHint": "Beim Entfernen des Katalogs werden die dazugehörigen Produkte gelöscht.",
+    "categoryPreview": "Kategorievorschau",
+    "productPreview": "Produktvorschau"
+  },
+  "dashlets": {
+    "ProductsByTag": "Produkte nach Tag",
+    "ProductTypes": "Produkt typen",
+    "ProductStatusOverview": "Produktstatus Übersicht",
+    "GeneralStatistics": "PIM Allgemeine Statistiken",
+    "Channels": "Kanäle",
+    "ProductsByStatus": "Produkte nach Status",
+    "ProductsByTaskStatus": "Products by Task Status"
+  },
+  "exceptions": {
+    "onlyForceDeletingAvailable": "Nur erzwingtes Löschen verfügbar",
+    "codeIsInvalid": "Code ist ungültig. Code sollte eindeutig sein. Nur Buchstaben, Zahlen und Char \"_\" erwartet.",
+    "notValid": "Daten sind nicht gültig"
+  },
+  "messages": {
+    "fieldHasPattern": "{field} sollte nur Unterstriche, Zahlen und Alphabete in Kleinbuchstaben enthalten",
+    "fieldIsUploading": "Hochladen läuft",
+    "fieldMaxFileSizeError": "Datei sollte nicht überschreiten {max} Mb",
+    "internalPostTitle": "Post wird nur von internen Benutzern angezeigt",
+    "loading": "Wird geladen...",
+    "saving": "Sparen..."
+  },
+  "navMenuDelimiters": {
+    "_delimiter_393f8383": "Artikel",
+    "Attribute": "Attribute",
+    "Product": "Produkte"
+  }
+}

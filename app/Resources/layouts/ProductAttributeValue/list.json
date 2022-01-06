@@ -1,0 +1,20 @@
+[
+  {
+    "name": "product"
+  },
+  {
+    "name": "attribute"
+  },
+  {
+    "name": "isRequired"
+  },
+  {
+    "name": "value"
+  },
+  {
+    "name": "scope"
+  },
+  {
+    "name": "channel"
+  }
+]

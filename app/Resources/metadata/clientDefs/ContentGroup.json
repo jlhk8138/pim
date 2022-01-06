@@ -1,0 +1,11 @@
+{
+  "controller": "controllers/record",
+  "boolFilterList": [
+    "onlyMy",
+    "notEntity"
+  ],
+  "hiddenBoolFilterList": [
+    "notEntity"
+  ],
+  "iconClass": "far fa-window-restore"
+}

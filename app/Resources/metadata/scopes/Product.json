@@ -1,0 +1,32 @@
+{
+  "entity": true,
+  "layouts": true,
+  "tab": true,
+  "acl": true,
+  "aclPortal": true,
+  "aclPortalLevelList": [
+    "all",
+    "account",
+    "own",
+    "no"
+  ],
+  "customizable": true,
+  "importable": true,
+  "notifications": true,
+  "stream": true,
+  "disabled": false,
+  "type": "Base",
+  "module": "Pim",
+  "object": true,
+  "hasOwner": true,
+  "hasAssignedUser": true,
+  "hasTeam": true,
+  "advancedFilters": true,
+  "addRelationEnabled": true,
+  "importTypeSimple": {
+    "handler": "\\Import\\Types\\Simple\\Handlers\\ProductHandler"
+  },
+  "completeness": {
+    "service": "Completeness\\Services\\ProductCompleteness"
+  }
+}

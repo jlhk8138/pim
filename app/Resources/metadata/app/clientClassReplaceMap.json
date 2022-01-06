@@ -1,0 +1,10 @@
+{
+  "views/header": [
+    "__APPEND__",
+    "pim"
+  ],
+  "views/fields/user-with-avatar": [
+    "__APPEND__",
+    "pim"
+  ]
+}

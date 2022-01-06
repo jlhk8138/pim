@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "attributeGroup": "Группа атрибутов",
+    "productAttributes": "Атрибуты продукта",
+    "typeValue": "Значения",
+    "type": "Тип атрибута",
+    "code": "Код",
+    "name": "Название атрибута",
+    "products": "Продукты",
+    "productAttributeValues": "Значения атрибута продукта",
+    "isRequired": "Обязательно",
+    "productFamilyAttributes": "Атрибуты продуктовой семьи",
+    "isMultilang": "Многоязычность",
+    "sortOrder": "Порядок сортировки",
+    "assetType": "Тип ассета",
+    "pattern": "Regex Pattern",
+    "unique": "Unique",
+    "isSorted": "Сортировать (по алфавиту)",
+    "prohibitedEmptyValue": "Запретить пустые значения",
+    "enumDefault": "По умолчанию",
+    "measure": "Мера",
+    "unitDefault": "По умолчанию"
+  },
+  "links": {
+    "attributeGroup": "Группа атрибутов",
+    "productAttributes": "Атрибуты продукта",
+    "products": "Продукты",
+    "productAttributeValues": "Значения атрибута продукта",
+    "productFamilies": "Продуктовые семьи",
+    "productFamilyAttributes": "Атрибуты продуктовой семьи"
+  },
+  "labels": {
+    "Create Attribute": "Создать атрибут",
+    "productFamily": "Продуктовая семья",
+    "addNewValue": "Добавить новое значение",
+    "array": "Массив данных",
+    "bool": "Лог. значение",
+    "currency": "Валюта",
+    "date": "Дата",
+    "datetime": "Дата время",
+    "enum": "Список",
+    "float": "Десятичная дробь",
+    "int": "Целое число",
+    "multiEnum": "Мульти-список",
+    "text": "Текст",
+    "unit": "Единица",
+    "url": "Url",
+    "varchar": "Текст переменного размера varchar",
+    "wysiwyg": "Wysiwyg",
+    "asset": "Ассет"
+  },
+  "messages": {
+    "sameNumberOptions": "Вы должны установить такое же количество опций",
+    "productsCountWithAttribute": "Количество продуктов, у которых задан данный атрибут: <strong>{count}</strong>"
+  },
+  "filterLabels": {
+    "All": "All"
+  },
+  "tooltips": {
+    "isSorted": "Опции будут отсортированы после сохранения."
+  },
+  "exceptions": {
+    "attributeValueShouldBeUnique": "Значение атрибута должно быть уникальным.",
+    "youCantChangeFieldOfTypeInAttribute": "Вы не можете изменить тип атрибута.",
+    "youCanNotUnlinkProductFamilyAttribute": "Невозможно отменить связь атрибута продуктовой семьи.",
+    "attributeWithSuchCodeAlreadyExist": "Атрибут с таким кодом уже существует.",
+    "attributeIsUsedInProducts": "Атрибут уже используется в продуктах. Пожалуйста, сначала оновите продукты.",
+    "attributeIsUsedInProductFamilies": "Атрибут уже используется в продуктовых семьях. Пожалуйста, сначала оновите продуктовые семьи.",
+    "attributeNotHaveUniqueValue": "Атрибут не имеет уникального значения.",
+    "someAttributeDontMathToPattern": "Некоторые атрибуты не соответствуют шаблону."
+  }
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "label": "Overview",
+    "style": "default",
+    "rows": [
+      [
+        {
+          "name": "isActive"
+        },
+        {
+          "name": "code"
+        }
+      ],
+      [
+        {
+          "name": "name"
+        },
+        {
+          "name": "category"
+        }
+      ],
+      [
+        {
+          "name": "locales"
+        },
+        false
+      ],
+      [
+        {
+          "name": "description",
+          "fullWidth": true
+        }
+      ]
+    ]
+  }
+]

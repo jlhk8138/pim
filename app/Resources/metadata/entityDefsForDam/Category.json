@@ -1,0 +1,32 @@
+{
+  "fields": {
+    "image": {
+      "type": "image",
+      "previewSize": "medium",
+      "readOnly": true,
+      "view": "pim:views/product/fields/image",
+      "importDisabled": true
+    },
+    "assets": {
+      "type": "linkMultiple",
+      "layoutDetailDisabled": true,
+      "layoutMassUpdateDisabled": true,
+      "importDisabled": true,
+      "noLoad": true
+    }
+  },
+  "links": {
+    "image": {
+      "type": "belongsTo",
+      "entity": "Attachment",
+      "skipOrmDefs": true
+    },
+    "assets": {
+      "type": "hasMany",
+      "relationName": "categoryAsset",
+      "foreign": "categories",
+      "entity": "Asset",
+      "audited": false
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "fields": {
+    "name": {
+      "type": "varchar",
+      "required": true,
+      "trim": true,
+      "isMultilang": true
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "rows": 4,
+      "lengthOfCut": 400,
+      "seeMoreDisabled": false,
+      "isMultilang": true
+    },
+    "isActive": {
+      "notNull": true,
+      "type": "bool",
+      "default": false
+    },
+    "hasLocales": {
+      "type": "bool",
+      "notStorable": true,
+      "default": false,
+      "layoutListDisabled": true,
+      "layoutListSmallDisabled": true,
+      "layoutDetailDisabled": true,
+      "layoutDetailSmallDisabled": true,
+      "layoutMassUpdateDisabled": true,
+      "filterDisabled": true,
+      "exportDisabled": true,
+      "importDisabled": true,
+      "emHidden": true
+    },
+    "locales": {
+      "type": "multiEnum",
+      "required": true,
+      "options": [],
+      "view": "pim:views/channel/fields/locales"
+    },
+    "createdAt": {
+      "type": "datetime",
+      "readOnly": true
+    },
+    "modifiedAt": {
+      "type": "datetime",
+      "readOnly": true
+    },
+    "createdBy": {
+      "type": "link",
+      "readOnly": true,
+      "view": "views/fields/user"
+    },
+    "modifiedBy": {
+      "type": "link",
+      "readOnly": true,
+      "view": "views/fields/user"
+    },
+    "ownerUser": {
+      "type": "link",
+      "required": true,
+      "view": "views/fields/owner-user"
+    },
+    "assignedUser": {
+      "type": "link",
+      "required": true,
+      "view": "views/fields/assigned-user"
+    },
+    "teams": {
+      "type": "linkMultiple",
+      "view": "views/fields/teams"
+    },
+    "code": {
+      "type": "varchar",
+      "layoutMassUpdateDisabled": true,
+      "required": true,
+      "trim": true,
+      "emHidden": true,
+      "view": "pim:views/fields/code-from-name",
+      "pattern": "/^[a-z_0-9{}]+$/"
+    },
+    "products": {
+      "type": "linkMultiple",
+      "layoutDetailDisabled": true,
+      "layoutMassUpdateDisabled": true,
+      "importDisabled": true,
+      "noLoad": true
+    },
+    "productAttributeValues": {
+      "type": "linkMultiple",
+      "layoutListDisabled": true,
+      "layoutListSmallDisabled": true,
+      "layoutDetailDisabled": true,
+      "layoutDetailSmallDisabled": true,
+      "layoutMassUpdateDisabled": true,
+      "importDisabled": true,
+      "noLoad": true
+    },
+    "productFamilyAttributes": {
+      "type": "linkMultiple",
+      "layoutDetailDisabled": true,
+      "layoutMassUpdateDisabled": true,
+      "importDisabled": true,
+      "noLoad": true
+    },
+    "isActiveForChannel": {
+      "type": "bool",
+      "notStorable": true,
+      "layoutListDisabled": true,
+      "layoutListSmallDisabled": true,
+      "layoutDetailDisabled": true,
+      "layoutDetailSmallDisabled": true,
+      "layoutMassUpdateDisabled": true,
+      "filterDisabled": true,
+      "emHidden": true
+    },
+    "isFromCategoryTree": {
+      "type": "bool",
+      "notStorable": true,
+      "layoutListDisabled": true,
+      "layoutListSmallDisabled": true,
+      "layoutDetailDisabled": true,
+      "layoutDetailSmallDisabled": true,
+      "layoutMassUpdateDisabled": true,
+      "filterDisabled": true,
+      "emHidden": true,
+      "exportDisabled": true,
+      "importDisabled": true
+    },
+    "category": {
+      "type": "link",
+      "view": "pim:views/category/fields/category-root"
+    }
+  },
+  "links": {
+    "createdBy": {
+      "type": "belongsTo",
+      "entity": "User"
+    },
+    "modifiedBy": {
+      "type": "belongsTo",
+      "entity": "User"
+    },
+    "ownerUser": {
+      "type": "belongsTo",
+      "entity": "User"
+    },
+    "assignedUser": {
+      "type": "belongsTo",
+      "entity": "User"
+    },
+    "teams": {
+      "type": "hasMany",
+      "entity": "Team",
+      "relationName": "EntityTeam",
+      "layoutRelationshipsDisabled": true
+    },
+    "products": {
+      "type": "hasMany",
+      "relationName": "productChannel",
+      "foreign": "channels",
+      "entity": "Product"
+    },
+    "productAttributeValues": {
+      "type": "hasMany",
+      "foreign": "channel",
+      "entity": "ProductAttributeValue"
+    },
+    "productFamilyAttributes": {
+      "type": "hasMany",
+      "foreign": "channel",
+      "entity": "ProductFamilyAttribute"
+    },
+    "category": {
+      "type": "belongsTo",
+      "foreign": "channels",
+      "entity": "Category",
+      "audited": false
+    }
+  },
+  "collection": {
+    "sortBy": "createdAt",
+    "asc": false,
+    "textFilterFields": [
+      "name",
+      "code"
+    ]
+  },
+  "indexes": {
+    "name": {
+      "columns": [
+        "name",
+        "deleted"
+      ]
+    },
+    "ownerUser": {
+      "columns": [
+        "ownerUserId",
+        "deleted"
+      ]
+    },
+    "assignedUser": {
+      "columns": [
+        "assignedUserId",
+        "deleted"
+      ]
+    }
+  }
+}

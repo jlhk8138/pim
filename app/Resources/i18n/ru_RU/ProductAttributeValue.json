@@ -1,0 +1,33 @@
+{
+  "custom": {
+    "Attribute": "Атрибут"
+  },
+  "fields": {
+    "productAttribute": "Атрибут продукта",
+    "product": "Продукт",
+    "attribute": "Атрибут",
+    "isRequired": "Обязательно",
+    "productFamilyAttribute": "Атрибут продуктовой семьи",
+    "value": "Значение",
+    "scope": "Область действия",
+    "channel": "Канал"
+  },
+  "links": {
+    "productAttribute": "Атрибут продукта",
+    "product": "Продукт",
+    "attribute": "Атрибут",
+    "channel": "Канал"
+  },
+  "labels": {
+    "Create ProductAttributeValue": "Создать значение атрибута"
+  },
+  "exceptions": {
+    "attributeUnitValueIsRequired": "Единица измерения для атрибута '%s' необходима.",
+    "noSuchAttributeUnit": "Единица измерения для атрибута '%s' не допустима.",
+    "noSuchAttributeOptions": "Значение для атрибута '%s' не допустимо.",
+    "youHaveNoAclRightsToReadAttributeValues": "У вас нет прав на чтение значений атрибутов.",
+    "productAttributeAlreadyExists": "Атрибут '%s' для канала %s уже связан.",
+    "attributeDontMatchToPattern": "Значение атрибута \"{attribute}\" не соответствует паттерну \"{pattern}\".",
+    "attributeShouldHaveBeUnique": "Атрибут %s должен иметь уникальное значение."
+  }
+}
